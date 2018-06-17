@@ -33,7 +33,7 @@ public class Log {
     }
 
     private static void log(String tag, String msg) {
-        System.out.println(tag + '|' + msg);
+        System.out.println(Thread.currentThread().getId() + "|" + tag + '|' + msg);
     }
 
 }
